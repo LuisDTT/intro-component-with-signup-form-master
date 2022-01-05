@@ -1,0 +1,106 @@
+.main
+	font-family: $family
+	font-size: $size
+	background: url(images/bg-intro-mobile.png) $red
+	min-height: 100vh
+	display: flex
+	justify-content: center
+	align-items: center
+	flex-direction: column
+	padding: 1.5em
+	gap: 3em
+
+.info-main
+	text-align: center
+	color: $white
+	max-width: 550px
+	&__title
+		line-height: 2.6rem
+	&__text
+		font-weight: 600
+		line-height: 1.6rem
+		margin-top: 1.5em
+
+.container-form
+	&__free
+		background: $blue
+		padding: .3em 3.5em
+		border-radius: 10px
+		box-shadow: $shadow-form
+		margin-bottom: 1.7em
+		&-text
+			color: $white
+			font-weight: 400
+			text-align: center
+			line-height: 1.6rem
+	&__form
+		background: $white
+		padding: 1.7em
+		border-radius: 10px
+		box-shadow: $shadow-form
+		display: flex
+		flex-direction: column
+		gap: 1em
+	&__box
+		display: flex
+		flex-direction: column
+		position: relative
+		&-input
+			border: $border-input
+			outline: none
+			padding: 1.2em 1.2em
+			border-radius: 5px
+			font-size: $size
+			font-weight: 600
+		&-input:focus
+			border: $border-input-focus
+		&-input--error
+			border: $border-input-error
+		&-text-error
+			font-size: 11px
+			margin: 0
+			padding-top: 5px
+			text-align: right
+			font-style: italic
+			font-weight: 500
+			color: $red
+			display: none
+		&-text-error--active
+			display: block
+		&-icon-error
+			position: absolute
+			top: 20px
+			right: 2em
+			display: none
+		&-icon-error--active
+			display: block
+
+	&__form
+		&-btn
+			background: $green
+			border: none
+			padding: 1em
+			border-radius: 5px
+			box-shadow: $shadow-btn
+			color: $white
+			font-weight: 600
+			text-transform: uppercase
+		&-btn:hover
+			opacity: .7
+			cursor: pointer
+	&__terms-services
+		margin: 0 2em
+		color: $grayish-blue
+		font-size: 11px
+		text-align: center
+		line-height: 1.2rem
+		&-accent
+			color: $red
+			font-weight: 700
+
+.footer
+	font-size: 12px
+	position: fixed
+	bottom: 0
+.attribution
+	margin: 0

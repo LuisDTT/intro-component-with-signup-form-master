@@ -1,0 +1,30 @@
+@media screen and(min-width: 700px)
+	.main
+		background: url(images/bg-intro-desktop.png) $red
+		padding: 2em 0
+		
+@media screen and(min-width: 1250px)
+	.main
+		padding: 0
+		flex-direction: row
+		gap: 1.7em
+	.info-main
+		text-align: left
+		max-width: 40%
+		&__title
+			font-size: 3.2rem
+			line-height: 4rem
+		&__text
+			line-height: 1.7rem
+	.container-form
+		width: 50%
+		max-width: 550px
+		&__form
+			padding: 2.5em
+			gap: 1.3em
+		&__box
+			&-input
+				font-size: $size
+				padding-left: 2em
+		&__terms-services
+				font-size: 12px
